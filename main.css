@@ -1,0 +1,176 @@
+/*--- font import ---*/
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url("./statics/NanumSquare_acR.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url("./statics/NanumSquare_acB.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    src: url("./statics/NanumSquare_acEB.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    src: url("./statics/NanumSquare_acL.ttf") format('truetype');
+}
+
+/*--- 기본 태그 정리 ---*/
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+
+    vertical-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b8bb !important;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+
+/*--- body, wrap ---*/
+body {
+    margin: 0;
+    padding: 0 5%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/*--- header : 크기(높이) 고정 --> 꼭 볼 수 있어야하는 정보 ---*/
+header {
+    height: 130px;
+    padding: 0 10px 30px 10px;
+}
+
+.sub_menu_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 35%;
+    border-bottom: lightgrey solid 1px;
+    padding: 0 10px;
+}
+
+.state_menu, .user_menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.state_menu_item, .user_menu_item {
+    height: 100%;
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: 'NanumSquare';
+    font-weight: normal;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    margin-top: 23px;
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: #00b8bb;
+}
+
+.user_menu_item {
+    margin-left: 20px;
+    color: dimgray;
+}
+
+.title_menu_wrap {
+    height: 65%;
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+
+}
+
+.title_logo {
+    width: 260px;
+}
+
+.main_menu_item {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-family: 'NanumSquare';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*--- index.html ---*/
+/*- main -*/
+
+.main_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index_sec_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.welcome_en, .welcome_ko {
+    color: white;
+    text-shadow: black;
+    font-family: 'NanumSquare';
+}
+
+.welcome_en {
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+.welcome_ko {
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content_wrap {
+    background-color: blue;
+}
+
+footer {
+    background-color: purple;
+
+    height: 100px;
+}
